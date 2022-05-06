@@ -1,0 +1,9 @@
+<mat-tab-group mat-align-tabs="center">
+  <mat-tab *ngFor="let user of users" [label]="user.name">
+    <h2>{{ user.name }}</h2>
+    <div>{{ user.email }}</div>
+    <div>{{ user.phone }}</div>
+    <hr />
+    <a [href]="user?.website" target="_blank"> Visit WebSite </a>
+  </mat-tab>
+</mat-tab-group>
